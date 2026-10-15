@@ -6,7 +6,7 @@ project('ds-yan-data-structure', 'c',
 c_args = [
   '-Wall',
   '-Wextra',
-  '-std=gnu'
+  '-std=gnu11'
 ]
 
 # 头文件目录
