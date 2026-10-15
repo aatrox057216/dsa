@@ -1,0 +1,25 @@
+CompileFlags:
+    CompilationDatabase: build/debug
+    BuiltinHeaders: QueryDriver
+
+Diagnostics:
+    ClangTidy:
+        Add: ["clang-analyzer-*", "misc-*", "readability-*", "bugprone-*"]
+        Remove:
+            [
+                "modernize-*",
+                "cppcoreguidelines-*",
+                readability-identifier-length,
+                readability-magic-numbers,
+            ]
+    UnusedIncludes: Strict
+    MissingIncludes: Strict
+
+InlayHints:
+    Enabled: true
+    ParameterNames: true
+    DeducedTypes: true
+    Designators: false
+    BlockEnd: false
+    DefaultArguments: true
+    TypeNameLimit: 24

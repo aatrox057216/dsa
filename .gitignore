@@ -1,0 +1,22 @@
+# White-list mode: ignore everything at root
+/*
+
+# Allow source directories
+!/src/
+!/include/
+!/demo/
+!/script/
+!/.github/
+
+# Root project files
+!/meson.build
+!/README.md
+!/.clang-format
+!/.clang-format-ignore
+!/.clangd
+!/.gitignore
+
+# Always ignore build artifacts and temp files
+/build/
+000tmp.md
+.zed/

@@ -1,0 +1,48 @@
+name: CI
+
+on:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout source code
+              uses: actions/checkout@v4
+
+            - name: Cache apt packages
+              uses: actions/cache@v4
+              with:
+                  path: /var/cache/apt
+                  key: ${{ runner.os }}-apt-dsa-v1
+
+            - name: Install build tools
+              run: |
+                  if [[ -n "${{ env.ACT }}" ]]; then
+                    apt update
+                    apt install -y python3 python3-pip ninja-build gcc
+                    pip3 install meson>=1.12
+                  else
+                    sudo apt update
+                    sudo apt install -y python3 python3-pip ninja-build gcc
+                    pip3 install meson>=1.12
+                  fi
+
+            - name: Print working dir and list files
+              run: |
+                  pwd
+                  ls -la
+            - name: Meson configure
+              run: meson setup build
+
+            - name: Build project
+              run: ninja -C build
+
+            - name: Upload demo binaries
+              uses: actions/upload-artifact@v4
+              with:
+                  name: demo-bin
+                  path: build/demo/

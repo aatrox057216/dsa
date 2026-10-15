@@ -1,0 +1,12 @@
+BasedOnStyle: GNU
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+BreakBeforeBraces: Allman
+ColumnLimit: 120
+SpaceBeforeParens: ControlStatements
+AlignTrailingComments: true
+AllowShortFunctionsOnASingleLine: None
+AllowShortBlocksOnASingleLine: Never
+BreakAfterReturnType: None
+AlwaysBreakAfterDefinitionReturnType: None
