@@ -1,5 +1,6 @@
 project('ds-yan-data-structure', 'c',
   meson_version: '>=1.12',
+  version: '0.0.1'
 )
 
 # 全局编译参数：开启警告，适配严蔚敏C代码（C89/ANSI C，可选）
@@ -25,6 +26,11 @@ libds = static_library('ds', ds_src,
 # ========== 多个实验可执行文件 ==========
 # 顺序表实验
 exe_sqlist = executable('demo_StaticList', 'demo/demo_StaticList.c',
+  include_directories: inc_dir,
+  link_with: libds,
+  c_args: c_args
+)
+exe_sqlist = executable('demo_SqList', 'demo/demo_SqList.c',
   include_directories: inc_dir,
   link_with: libds,
   c_args: c_args
