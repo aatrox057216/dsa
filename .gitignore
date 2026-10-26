@@ -16,6 +16,10 @@
 !/.clangd
 !/.gitignore
 !/CMakeLists.txt
+!/.actrc
+
+
+
 # Always ignore build artifacts and temp files
 /build/
 000tmp.md
