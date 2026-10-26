@@ -15,7 +15,7 @@
 !/.clang-format-ignore
 !/.clangd
 !/.gitignore
-
+!/CMakeLists.txt
 # Always ignore build artifacts and temp files
 /build/
 000tmp.md
