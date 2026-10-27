@@ -35,3 +35,8 @@ exe_sqlist = executable('demo_SqList', 'demo/demo_SqList.c',
   link_with: libds,
   c_args: c_args
 )
+exe_sqlist = executable('demo_LinkList', 'demo/demo_LinkList.c',
+  include_directories: inc_dir,
+  link_with: libds,
+  c_args: c_args
+)

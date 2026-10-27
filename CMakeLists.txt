@@ -38,5 +38,9 @@ target_compile_options(ds PRIVATE -Wall -Wextra)
 # 可执行文件 demo_StaticList
 add_executable(demo_StaticList demo/demo_StaticList.c)
 target_link_libraries(demo_StaticList PRIVATE ds)
+
 add_executable(demo_SqList demo/demo_SqList.c)
 target_link_libraries(demo_SqList PRIVATE ds)
+
+add_executable(demo_LinkList demo/demo_LinkList.c)
+target_link_libraries(demo_LinkList PRIVATE ds)
