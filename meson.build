@@ -45,3 +45,8 @@ exe_sqlist = executable('demo_CircularList', 'demo/demo_CircularList.c',
   link_with: libds,
   c_args: c_args
 )
+exe_sqlist = executable('demo_DuLinkList', 'demo/demo_DuLinkList.c',
+  include_directories: inc_dir,
+  link_with: libds,
+  c_args: c_args
+)

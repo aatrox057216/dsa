@@ -47,3 +47,6 @@ target_link_libraries(demo_LinkList PRIVATE ds)
 
 add_executable(demo_CircularList demo/demo_CircularList.c)
 target_link_libraries(demo_CircularList PRIVATE ds)
+
+add_executable(demo_DuLinkList demo/demo_DuLinkList.c)
+target_link_libraries(demo_CircularList PRIVATE ds)
