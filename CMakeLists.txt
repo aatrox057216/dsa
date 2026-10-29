@@ -50,3 +50,6 @@ target_link_libraries(demo_CircularList PRIVATE ds)
 
 add_executable(demo_DuLinkList demo/demo_DuLinkList.c)
 target_link_libraries(demo_CircularList PRIVATE ds)
+
+add_executable(demo_SeqStack demo/demo_SeqStack.c)
+target_link_libraries(demo_SeqStack PRIVATE ds)
