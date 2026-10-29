@@ -17,7 +17,7 @@
 !/.gitignore
 !/CMakeLists.txt
 !/.actrc
-
+!/Makefile
 
 
 # Always ignore build artifacts and temp files
