@@ -70,3 +70,9 @@ executable('demo_LinkStack', 'demo/demo_LinkStack.c',
   link_with: libds,
   c_args: c_args
 )
+
+executable('demo_LinkQueue', 'demo/demo_LinkQueue.c',
+  include_directories: inc_dir,
+  link_with: libds,
+  c_args: c_args
+)
