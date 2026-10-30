@@ -56,3 +56,6 @@ target_link_libraries(demo_SeqStack PRIVATE ds)
 
 add_executable(demo_BothStack demo/demo_BothStack.c)
 target_link_libraries(demo_BothStack PRIVATE ds)
+
+add_executable(demo_LinkStack demo/demo_LinkStack.c)
+target_link_libraries(demo_LinkStack PRIVATE ds)
