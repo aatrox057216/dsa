@@ -58,3 +58,9 @@ executable(
   link_with: libds,
   c_args: c_args,
 )
+
+executable('demo_BothStack', 'demo/demo_BothStack.c',
+  include_directories: inc_dir,
+  link_with: libds,
+  c_args: c_args
+)
