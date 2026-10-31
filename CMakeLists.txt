@@ -71,3 +71,6 @@ target_link_libraries(demo_CircularQueue PRIVATE ds)
 
 add_executable(demo_Deque demo/demo_Deque.c)
 target_link_libraries(demo_Deque PRIVATE ds)
+
+add_executable(demo_SString demo/demo_SString.c)
+target_link_libraries(demo_SString PRIVATE ds)
