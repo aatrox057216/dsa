@@ -83,3 +83,8 @@ executable('demo_SqQueue', 'demo/demo_SqQueue.c',
   c_args: c_args
 )
 
+executable('demo_CircularQueue', 'demo/demo_CircularQueue.c',
+  include_directories: inc_dir,
+  link_with: libds,
+  c_args: c_args
+)
