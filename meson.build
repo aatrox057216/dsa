@@ -76,3 +76,10 @@ executable('demo_LinkQueue', 'demo/demo_LinkQueue.c',
   link_with: libds,
   c_args: c_args
 )
+
+executable('demo_SqQueue', 'demo/demo_SqQueue.c',
+  include_directories: inc_dir,
+  link_with: libds,
+  c_args: c_args
+)
+
