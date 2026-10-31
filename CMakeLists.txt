@@ -68,3 +68,6 @@ target_link_libraries(demo_SqQueue PRIVATE ds)
 
 add_executable(demo_CircularQueue demo/demo_CircularQueue.c)
 target_link_libraries(demo_CircularQueue PRIVATE ds)
+
+add_executable(demo_Deque demo/demo_Deque.c)
+target_link_libraries(demo_Deque PRIVATE ds)

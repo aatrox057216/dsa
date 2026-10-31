@@ -88,3 +88,9 @@ executable('demo_CircularQueue', 'demo/demo_CircularQueue.c',
   link_with: libds,
   c_args: c_args
 )
+
+executable('demo_Deque', 'demo/demo_Deque.c',
+  include_directories: inc_dir,
+  link_with: libds,
+  c_args: c_args
+)
